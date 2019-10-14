@@ -111,6 +111,8 @@ f.restype, f.argtypes = c_int, [p_rtlsdr_dev]
 f = librtlsdr.rtlsdr_set_tuner_gain
 f.restype, f.argtypes = c_int, [p_rtlsdr_dev, c_int]
 
+f = librtlsdr.rtlsdr_ # Add re - freq change 
+
 # int rtlsdr_get_tuner_gain(rtlsdr_dev_t *dev);
 f = librtlsdr.rtlsdr_get_tuner_gain
 f.restype, f.argtypes = c_int, [p_rtlsdr_dev]

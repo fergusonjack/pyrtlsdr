@@ -21,7 +21,7 @@ import pkg_resources
 try:
     __version__ = pkg_resources.require('pyrtlsdr')[0].version
 except: # pragma: no cover
-    __version__ = 'unknown'
+    __version__ = '1.6'
 
 RTLSDR_CLIENT_MODE = False
 if os.environ.get('RTLSDR_CLIENT_MODE', '').lower() in ['true', '1', 'yes']:
